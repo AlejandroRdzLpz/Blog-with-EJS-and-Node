@@ -1,4 +1,6 @@
 <%- include("partials/header"); -%>
     <h1>Contact</h1>
-    <p> <%= contactContent %> </p>
+    <% contactContent.forEach(elem => { %>
+        <p><%- elem %></p>
+    <% }) %>
 <%- include("partials/footer"); -%>
