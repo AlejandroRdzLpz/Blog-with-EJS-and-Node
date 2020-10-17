@@ -6,9 +6,10 @@ const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose")
 
-const homeStartingContent = "Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor neque vitae tempus quam. Sit amet cursus sit amet dictum sit amet justo. Viverra tellus in hac habitasse. Imperdiet proin fermentum leo vel orci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut.";
-const aboutContent = "Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Non diam phasellus vestibulum lorem sed. Platea dictumst quisque sagittis purus sit. Egestas sed sed risus pretium quam vulputate dignissim suspendisse.";
-const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique.";
+const homeStartingContent = "This is the basic blog of a JS student.";
+
+const aboutContent = "I am an aspiring Web Dev and Mobile Dev from CDMX. This is an example of the technologies I am familiar with";
+const contactContent = ["My email: lalolandino@gmail.com", 'My GutHub: https://github.com/AlejandroRdzLpz', 'My LinkedIn: https://www.linkedin.com/in/alejandro-rodriguez-lopez-57b150194/'];
 
 const app = express();
 
