@@ -1,5 +1,6 @@
 //jshint esversion:6
 
+const dotenv = require('dotenv')
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -16,7 +17,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // Mongoose part
-mongoose.connect('mongodb+srv://admin-alex:55331177@cluster0.jitkh.mongodb.net/blogPosts', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true});
 const blogPost = new mongoose.Schema({
   title: String,
   body: String
